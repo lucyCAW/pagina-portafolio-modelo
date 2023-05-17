@@ -1,0 +1,128 @@
+.skills{
+text-align: center;
+background: #151515;
+width: 90%;
+padding: 70px;
+margin: 0 auto 50px;
+border-radius: 70px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 1.7rem;
+box-shadow: 4px 5px 28px rgba(0, 0, 0, 0.9);
+}
+.title-skills{
+font-size: 2.7rem;
+}
+.paragragh{
+   color: #B8B8B8;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  line-height: 1.5em;
+}
+.slinder-container{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	position: relative;
+	display: flex;
+}
+.card{
+	height: 200px;
+	width: 200px;
+	background-color: #232323;
+	box-shadow: 4px 5px 17px rgba(0, 0, 0, 0.9);
+	border-radius: 10px;
+	width: 80%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.wrap-percent{
+border: 10px solid purple;
+border-radius: 50%;
+height: 130px;
+width: 130px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.card h2{
+	font-size: 1.6rem;
+	margin-top: 10px;
+}
+.arrow-slider{
+	width: 20px;
+	height: 20px;
+}
+.right{
+	position: absolute;
+	right: 0px;
+	bottom: 80px;
+}
+.left{
+	position: absolute;
+	left: 0px;
+	bottom: 80px;
+
+}
+
+
+/*----------MOBILE DESIGN---------*/
+@media screen and (max-width: 768px){
+.skills{
+	 padding: 30px;
+	 border-radius: 30px;
+	 gap: 1rem;
+}
+.title-skills{
+	font-size: 2rem;
+}
+.paragragh{
+	font-size: 1rem;
+}
+.card{
+	width: 100%;
+	justify-content: space-evenly;
+}
+.wrap-percent{
+	height: 80px;
+	width: 80px;
+	border: 10px solid purple;
+}
+.percent{
+	font-size: 0.9rem;
+}
+.left, .right{
+	bottom: 20px;
+}
+.left{
+	left: 10px;
+}
+.right{
+	right: 10px;
+}
+.card h2{
+	font-size: 1.1rem;
+}
+}
+
+@media screen and (max-width: 380px){
+	.skills{
+		padding: 20px;
+	}
+	.title-skills{
+		font-size: 1.8rem;
+	}
+	.paragragh{
+		font-size: 0.9rem;
+	}
+.wrap-percent{
+	height: 60px;
+	width: 60px;
+	border: 5px solid purple;
+}
+.card h2{
+	font-size: 1rem;
+}

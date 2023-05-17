@@ -1,0 +1,81 @@
+.project{
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+.project-paragragh{
+	text-align: center;
+	 width: 80%;
+	 color: #B8B8B8;
+    font-size: 1.1rem;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin-bottom: 30px;
+}
+.tab-1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1.2rem;
+}
+.img-tab{
+object-fit: cover;
+}
+
+.img-container{
+border-radius: 10px;
+width: 350px;
+height: 240px;
+position: relative;
+overflow: hidden;
+box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+.cover{
+transform: translateY(100%);
+transition: 0.5s ease-in-out;
+position: absolute;
+background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.8) -5.91%, rgba(74, 47, 189, 0.8) 111.58%);
+height: 100%;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+}
+
+.img-container:hover .cover{
+transform: translateY(0);
+}
+.cover h3{
+	font-size: 1.8rem;
+	font-weight: 700;
+}
+.cover p{
+	color: white;
+	font-style: italic;
+}
+
+/*----------MOBILE DESIGN---------*/
+@media screen and (max-width: 768px){
+	.title{
+		font-size: 2rem;
+	}
+	.project-paragragh{
+        font-size: 1rem;
+	}
+@media screen and (max-width: 380px){
+.project-paragragh{
+	font-size: 0.9rem;
+}
+.img-container{
+border-radius: 10px;
+width: 280px;
+height: 180px;
+}
+}

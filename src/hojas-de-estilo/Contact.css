@@ -1,0 +1,177 @@
+.contact{
+background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+display: flex;
+gap: 2rem;
+padding: 50px 30px;
+position: relative;
+}
+
+.img-contact{
+	height: 400px;
+	flex: 2;
+}
+.contact-form{
+flex: 3;
+}
+
+form{
+	margin-top: 30px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+  grid-gap: 0.7rem;
+}
+.contact form input, textarea{
+width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  color: #fff;
+  padding: 18px 26px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  transition: 0.3s ease-in-out;
+}
+textarea{
+	grid-column: 1 / -1;
+}
+.contact form input:focus, .contact form textarea:focus {
+  background: rgba(255, 255, 255, 1);
+  color: #121212;
+}
+.contact form input::placeholder, .contact form textarea::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+.contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
+  color: #121212;
+  opacity: 0.8;
+}
+.contact form button {
+  width: 200px;
+  font-weight: 700;
+    color: purple;
+  background-color: #fff;
+  padding: 14px 48px;
+  font-size: 18px;
+  margin: 30px 0;
+  border-radius: 0;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  margin-bottom: 70px;
+}
+.contact form button::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: 0.3s ease-in-out;
+}
+.contact form button:hover::before {
+  width: 100%;
+}
+
+
+/*----------newsletter section--------*/
+.empty-container{
+  position: relative;
+  width: 100%;  
+}
+.newsletter-container{
+background-color: white;
+padding: 70px;
+border-radius: 40px;
+box-shadow: 10px 15px 25px rgba(0, 0, 0, 0.9);
+display: flex;
+align-items: center;
+justify-content: space-between;
+height: 250px;
+width: 90%;
+position: absolute;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+margin: auto;
+}
+
+.newsletter-text{
+flex: 3;
+margin-left: 30px;
+font-size: 1.6rem;
+font-weight: 700;
+color: black;
+display: flex;
+flex-direction: column;
+
+}
+.newsletter-container form{
+  flex: 2;
+border: 1px solid purple;
+padding: 3px;
+height: 50px;
+border-radius: 15px;
+display: flex;
+justify-content: space-between;
+}
+.newsletter-container form button{
+ background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.9) -5.91%, rgba(74, 47, 189, 0.9) 111.58%);
+ width: 30%;
+height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+.newsletter-container form button:hover{
+  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  cursor: pointer;
+
+}
+.newsletter-container form input{
+  width: 60%;
+  padding-left: 20px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/*----------MOBILE DESIGN---------*/
+@media screen and (max-width: 768px){
+  .contact{
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-contact{
+    height: 150px;
+    width: 150px;
+  }
+  .contact-form{
+    text-align: center;
+  }
+  form{
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding-bottom: 40px;
+  }
+  /*------------newsletter section--------*/
+  .newsletter-container{
+    padding: 20px;
+    flex-direction: column;
+  }
+  .newsletter-text{
+    justify-content: center;
+    font-size: 1.4rem;
+    flex: 3;
+  }
+  .newsletter-container form{
+    flex-wrap: wrap;
+    width: 90%;
+   flex: 1;
+  }
+}

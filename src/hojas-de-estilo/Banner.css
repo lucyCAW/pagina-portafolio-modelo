@@ -1,0 +1,116 @@
+.banner{
+	display: flex;
+	margin-top: 0;
+  padding: 260px 30px 100px 30px;
+}
+.banner-description{
+ font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 1.4rem;
+}
+.banner-title{
+  margin-top: 20px;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.banner-paragraph{
+    font-style: italic;
+    margin:10px 0 20px 0;
+    color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+}
+.btn-container{
+  display: flex;
+  align-items: center;
+}
+.banner-btn{
+  margin-right: 10px;
+    color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+}
+.banner-btn:hover{
+    color: purple;
+}
+.arrow-btn{
+  height: 15px;
+  width: 15px;
+  transition: 0.3s ease-in-out;
+}
+.arrow-btn-container{
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 27px;
+  width: 27px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.banner-btn:hover{
+   cursor: pointer;
+ }
+.side-img{
+    min-width: 30px;
+    max-width: 500px;
+}
+.arrow-btn-container, .side-img{
+ animation: updown 3s linear infinite;
+}
+@keyframes updown {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+
+/*----------MOBILE DESIGN---------*/
+@media screen and (max-width: 768px){
+    .banner-description{
+        font-size: 1.1rem;;
+    }
+    .banner-title{
+        font-size: 2.3rem;
+    }
+    .banner-paragraph{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 390px){
+.banner-description{
+    font-size: 0.9rem;
+}
+.banner-title{
+    font-size: 2rem;
+}
+.banner-paragraph{
+    font-size: 0.9rem;
+}
+.banner-btn{
+    font-size: 1rem;
+}
+.arrow-btn-container{
+    width: 23x;
+    height: 23px;
+}
+.arrow-btn{
+   height: 10px;
+  width: 10px;
+}
+}
