@@ -63,12 +63,14 @@ transform: translateY(0);
 
 /*----------MOBILE DESIGN---------*/
 @media screen and (max-width: 768px){
-	.title{
-		font-size: 2rem;
-	}
-	.project-paragragh{
-        font-size: 1rem;
-	}
+.title{
+ font-size: 2rem;
+  }
+.project-paragragh{
+  font-size: 1rem;
+  }
+}
+
 @media screen and (max-width: 380px){
 .project-paragragh{
 	font-size: 0.9rem;
